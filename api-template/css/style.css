@@ -3,6 +3,10 @@
 /*******************************************/
 
 /* Box Model Hack */
+html{
+  height: 100vh;
+  background: radial-gradient(#f69d3c, #3f87a6);
+}
 *{
   box-sizing: border-box;
 }
@@ -15,7 +19,9 @@ main{ /* main container*/
   flex-direction: column;
   align-items: center;
 }
-
+.date{
+  font-size: 35px;
+}
 img{
   max-width: 150vw;
   max-height: 50vh;
@@ -26,11 +32,25 @@ iframe{
   display: none;
 }
 h3{
-  margin: 0;
-
-  max-height: 10vh
+  margin: 0px;
 }
+ p{
+   font-size: 20px;
+   width: 50%;
+   text-align: center;
+   font-weight: 650;
+ }
+ 
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media all and (max-width: 700px) {
+  img{
+    max-width: 100vw;
+    max-height: 50vh;
+  }
+}

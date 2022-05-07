@@ -20,7 +20,7 @@ function getFetch(){
           document.querySelector('h2').innerText = data.title
         }
        
-        document.querySelector('h3').innerText = data.explanation
+        document.querySelector('p').innerText = data.explanation
       })
       .catch(err => {
           console.log(`error ${err}`)
